@@ -19,10 +19,12 @@ namespace pryRDGRomero
         {
             //Abrir archivo para la escritura 
             StreamWriter AD = new StreamWriter(NomArchi);
-            AD.WriteLine(dato);
+            AD.WriteLine("Hola");
             AD.Close();
 
         }
+   
+
     }
 
 }   

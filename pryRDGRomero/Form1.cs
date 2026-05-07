@@ -31,5 +31,10 @@ namespace pryRDGRomero
         {
 
         }
+
+        private void frmEstructuraDeDatos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
