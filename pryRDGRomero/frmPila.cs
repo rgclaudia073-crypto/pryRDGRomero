@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace pryRDGRomero
 {
-    public partial class frmListaSimple : Form
+    public partial class frmPila : Form
     {
-        public frmListaSimple()
+        public frmPila()
         {
             InitializeComponent();
-        }
-
-        private void frmListaSimple_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

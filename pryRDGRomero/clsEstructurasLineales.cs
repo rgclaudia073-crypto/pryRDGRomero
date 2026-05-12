@@ -3,23 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
-
 
 namespace pryRDGRomero
 {
-    internal class clsListaSimple
+    internal class clsEstructurasLineales
     {
-        //Campos de clase
+        //Declaro los dos campos
         private clsNodo pri;
 
-        //Propiedades de clase
-        public clsNodo Pri
+        //Propiedades de la clase
+        public clsNodo Primero
         {
             get { return pri; }
             set { pri = value; }
         }
-
 
         public void Agregar(clsNodo Nuevo)
         {
@@ -45,35 +42,6 @@ namespace pryRDGRomero
                     }
                     Nuevo.Sig = aux;
                     ant.Sig = Nuevo;
-                }
-            }
-        }
-
-        public void Eliminar(clsNodo Nodo)
-        {
-            if (Pri != null)
-            {
-                if (Pri.Codigo == Nodo.Codigo)
-                {
-                    Pri = Pri.Sig;
-                }
-                else
-                {
-                    clsNodo aux = Pri;
-                    clsNodo ant = Pri;
-                    while (aux != null && aux.Codigo != Nodo.Codigo)
-                    {
-                        ant = aux;
-                        aux = aux.Sig;
-                    }
-                    if (aux != null)
-                    {
-                        ant.Sig = aux.Sig;
-                    }
-                    else
-                    {
-                        MessageBox.Show("El nodo no existe en la lista.");
-                    }
                 }
             }
         }
