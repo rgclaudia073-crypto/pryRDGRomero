@@ -51,7 +51,8 @@
     <Compile Include="clsEstructurasLineales.cs" />
     <Compile Include="clsListaDoble.cs" />
     <Compile Include="clsListaSimple.cs" />
-    <Compile Include="clsNodo.cs" />
+    <Compile Include="clsNodos.cs" />
+    <Compile Include="clsPila.cs" />
     <Compile Include="frmCola.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +89,7 @@
     <Compile Include="frmPila.Designer.cs">
       <DependentUpon>frmPila.cs</DependentUpon>
     </Compile>
+    <Compile Include="IclsListaDole.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCola.resx">
@@ -139,6 +141,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ejemplo pila.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cola.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

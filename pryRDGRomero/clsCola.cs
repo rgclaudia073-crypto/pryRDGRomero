@@ -10,16 +10,16 @@ namespace pryRDGRomero
 {
     internal class clsCola
     {
-        private clsNodo ult;
+        private clsNodos ult;
 
         //Propiedades de la clase
-        public clsNodo Ultimo
+        public clsNodos Ultimo
         {
             get { return ult; }
             set { ult = value; }
         }
         //Metodos de la clase
-        public void Agregar(clsNodo Nuevo)
+        public void Agregar(clsNodos Nuevo)
         {
             if (Primero = null)
             {

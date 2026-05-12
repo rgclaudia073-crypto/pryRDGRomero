@@ -6,13 +6,16 @@ using System.Threading.Tasks;
 
 namespace pryRDGRomero
 {
-    internal class clsNodo
+    internal class clsNodos
     {
+        internal char Tramite;
+
         //Campos del Nodo
         private int codigo;
         private string nombre;
-        private clsNodo sig;
-        private clsNodo ant;
+        private clsNodos sig;
+        private clsNodos ant;
+
         //Propiedades del nodo
         public int Codigo
         {
@@ -24,19 +27,23 @@ namespace pryRDGRomero
             get { return nombre; }
             set { nombre = value; }
         }
-        public clsNodo Sig
+        public clsNodos Sig
         {
             get { return sig; }
             set { sig = value; }
         }
 
-        public clsNodo Ant
+        public clsNodos Ant
         {
             get { return ant; }
             set { ant = value; }
         }
 
-        public clsNodo Siguiente { get; internal set; }
+        public clsNodos Siguiente
+        {
+            get { return sig; }
+            set { sig = value; }
+        }
     }
 }
 

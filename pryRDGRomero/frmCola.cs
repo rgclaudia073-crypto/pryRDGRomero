@@ -16,5 +16,10 @@ namespace pryRDGRomero
         {
             InitializeComponent();
         }
+
+        private void frmCola_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

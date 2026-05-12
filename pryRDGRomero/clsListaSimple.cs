@@ -11,17 +11,17 @@ namespace pryRDGRomero
     internal class clsListaSimple
     {
         //Campos de clase
-        private clsNodo pri;
+        private clsNodos pri;
 
         //Propiedades de clase
-        public clsNodo Pri
+        public clsNodos Pri
         {
             get { return pri; }
             set { pri = value; }
         }
 
 
-        public void Agregar(clsNodo Nuevo)
+        public void Agregar(clsNodos Nuevo)
         {
             if (Pri == null)
             {
@@ -36,8 +36,8 @@ namespace pryRDGRomero
                 }
                 else
                 {
-                    clsNodo aux = pri;
-                    clsNodo ant = Pri;
+                    clsNodos aux = pri;
+                    clsNodos ant = Pri;
                     while (Nuevo.Codigo > aux.Codigo)
                     {
                         ant = aux;
@@ -49,7 +49,7 @@ namespace pryRDGRomero
             }
         }
 
-        public void Eliminar(clsNodo Nodo)
+        public void Eliminar(clsNodos Nodo)
         {
             if (Pri != null)
             {
@@ -59,8 +59,8 @@ namespace pryRDGRomero
                 }
                 else
                 {
-                    clsNodo aux = Pri;
-                    clsNodo ant = Pri;
+                    clsNodos aux = Pri;
+                    clsNodos ant = Pri;
                     while (aux != null && aux.Codigo != Nodo.Codigo)
                     {
                         ant = aux;

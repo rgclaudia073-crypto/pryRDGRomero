@@ -9,16 +9,16 @@ namespace pryRDGRomero
     internal class clsEstructurasLineales
     {
         //Declaro los dos campos
-        private clsNodo pri;
+        private clsNodos pri;
 
         //Propiedades de la clase
-        public clsNodo Primero
+        public clsNodos Pri
         {
             get { return pri; }
             set { pri = value; }
         }
 
-        public void Agregar(clsNodo Nuevo)
+        public void Agregar(clsNodos Nuevo)
         {
             if (Pri == null)
             {
@@ -33,8 +33,8 @@ namespace pryRDGRomero
                 }
                 else
                 {
-                    clsNodo aux = pri;
-                    clsNodo ant = Pri;
+                    clsNodos aux = pri;
+                    clsNodos ant = Pri;
                     while (Nuevo.Codigo > aux.Codigo)
                     {
                         ant = aux;

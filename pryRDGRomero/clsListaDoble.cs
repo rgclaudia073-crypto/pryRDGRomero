@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.IO;
 
 namespace pryRDGRomero
 {
@@ -12,19 +14,34 @@ namespace pryRDGRomero
         {
             public clsListaDole() { }
             //Declaro los dos campos
-            private clsNodo pri;
-            private clsNodo ult;
+            private clsNodos pri;
+            private clsNodos ult;
 
             //Declaro las dos propiedades
-            public clsNodo Primero
+            public clsNodos Primero
             {
                 get { return pri; }
                 set { pri = value; }
             }
-            public clsNodo Ultimo
+            public clsNodos Ultimo
             {
                 get { return ult; }
                 set { ult = value; }
+            }
+
+            public void Agregar(clsNodos Nuevo)
+            {
+                if (Primero == null)
+                {
+                    Primero = Nuevo;
+                    Ultimo = Nuevo;
+                }
+                else
+                {
+                    Ultimo.Sig = Nuevo;
+                    Nuevo.Ant = Ultimo;
+                    Ultimo = Nuevo;
+                }
             }
         }
     }
