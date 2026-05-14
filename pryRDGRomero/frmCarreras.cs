@@ -21,5 +21,23 @@ namespace pryRDGRomero
         {
 
         }
+
+        private void btnGrabar_Click(object sender, EventArgs e)
+        {
+            clsArchivo objCarrera = new clsArchivo();
+            objCarrera.NomArchi = "Carreras.csv";
+            objCarrera.Grabar(txtCarreras.Text);
+            objCarrera.Recorrer(lstCarrera);
+            txtCarreras.Clear();
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            clsArchivo objCarrera = new clsArchivo();
+            objCarrera.NomArchi = "Carreras.csv";
+            objCarrera.BorrarTodo();
+            objCarrera.Recorrer(lstCarrera);
+            txtCarreras.Clear();
+        }
     }
 }

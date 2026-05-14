@@ -11,18 +11,18 @@ namespace pryRDGRomero
         internal char Tramite;
 
         //Campos del Nodo
-        private int codigo;
+        private Int32 codigo;
         private string nombre;
         private clsNodos sig;
         private clsNodos ant;
 
         //Propiedades del nodo
-        public int Codigo
+        public Int32 Codigo
         {
             get { return codigo; }
             set { codigo = value; }
         }
-        public string Nombre
+        public String Nombre
         {
             get { return nombre; }
             set { nombre = value; }

@@ -19,7 +19,7 @@ namespace pryRDGRomero
 
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-
+            this.Close();
         }
 
         private void tstProgramaOO_Click(object sender, EventArgs e)
@@ -29,12 +29,25 @@ namespace pryRDGRomero
 
         private void coloresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmColores v = new frmColores();
+            v.ShowDialog();
         }
 
         private void frmEstructuraDeDatos_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void carrerasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCarreras x = new frmCarreras();
+            x.ShowDialog();
+        }
+
+        private void datosDeDesarrolloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDatosDelDesarrollador v = new frmDatosDelDesarrollador();
+            v.ShowDialog();
         }
     }
 }

@@ -32,6 +32,7 @@
             this.txtCarreras = new System.Windows.Forms.TextBox();
             this.btnGrabar = new System.Windows.Forms.Button();
             this.lstCarrera = new System.Windows.Forms.ListBox();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblCarrera
@@ -55,12 +56,13 @@
             // btnGrabar
             // 
             this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrabar.Location = new System.Drawing.Point(222, 112);
+            this.btnGrabar.Location = new System.Drawing.Point(181, 117);
             this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(87, 33);
+            this.btnGrabar.Size = new System.Drawing.Size(87, 28);
             this.btnGrabar.TabIndex = 2;
             this.btnGrabar.Text = "Grabar";
             this.btnGrabar.UseVisualStyleBackColor = true;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // lstCarrera
             // 
@@ -70,11 +72,23 @@
             this.lstCarrera.Size = new System.Drawing.Size(311, 160);
             this.lstCarrera.TabIndex = 3;
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.Location = new System.Drawing.Point(49, 117);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(90, 28);
+            this.btnLimpiar.TabIndex = 4;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // frmCarreras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(335, 450);
+            this.ClientSize = new System.Drawing.Size(335, 390);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.lstCarrera);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.txtCarreras);
@@ -93,5 +107,6 @@
         private System.Windows.Forms.TextBox txtCarreras;
         private System.Windows.Forms.Button btnGrabar;
         private System.Windows.Forms.ListBox lstCarrera;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

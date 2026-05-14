@@ -10,24 +10,19 @@ using System.Windows.Forms;
 
 namespace pryRDGRomero
 {
-    public partial class frmMeses : Form
+    public partial class frmColores : Form
     {
-        public frmMeses()
+        public frmColores()
         {
             InitializeComponent();
-        }
-
-        private void frmMeses_Load(object sender, EventArgs e)
-        {
-            btnGrabar.Enabled = false;
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
             clsArchivo x = new clsArchivo();
-            x.NomArchi = "Meses.txt";
+            x.NomArchi = "Colores.txt";
             x.Grabar(txtNombre.Text);
-            x.Recorrer(lstMeses);
+            x.Recorrer(lstColores);
             txtNombre.Text = "";
         }
 
@@ -41,6 +36,11 @@ namespace pryRDGRomero
             {
                 btnGrabar.Enabled = true;
             }
+        }
+
+        private void frmColores_Load(object sender, EventArgs e)
+        {
+            btnGrabar.Enabled = false;
         }
     }
 }

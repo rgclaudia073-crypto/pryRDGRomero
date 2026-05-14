@@ -52,6 +52,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(116, 24);
             this.txtNombre.TabIndex = 1;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // btnListar
             // 
@@ -72,6 +73,7 @@
             this.btnGrabar.TabIndex = 3;
             this.btnGrabar.Text = "Grabar";
             this.btnGrabar.UseVisualStyleBackColor = true;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // lstMeses
             // 
@@ -85,7 +87,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(339, 450);
+            this.ClientSize = new System.Drawing.Size(339, 371);
             this.Controls.Add(this.lstMeses);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.btnListar);
@@ -93,6 +95,7 @@
             this.Controls.Add(this.lblNombre);
             this.Name = "frmMeses";
             this.Text = "frmMeses";
+            this.Load += new System.EventHandler(this.frmMeses_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
