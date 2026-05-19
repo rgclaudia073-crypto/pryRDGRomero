@@ -44,6 +44,18 @@ namespace pryRDGRomero
             get { return sig; }
             set { sig = value; }
         }
+
+        public clsNodos Izquierda
+            {
+            get { return ant; }
+            set { ant = value; }
+        }
+        public clsNodos Derecha
+        {
+            get { return sig; }
+            set { sig = value; }
+
+        }
     }
 }
 
