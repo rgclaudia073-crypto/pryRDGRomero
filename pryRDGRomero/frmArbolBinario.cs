@@ -16,10 +16,17 @@ namespace pryRDGRomero
         {
             InitializeComponent();
         }
-
+        clsArbolBinario ObjArbol = new clsArbolBinario();
         private void frmArbolBinario_Load(object sender, EventArgs e)
         {
+            clsNodos Persona = new clsNodos();
+            Persona.Codigo = Convert.ToInt32(txtCódigo.Text);
+            Persona.Nombre = txtNombre.Text;
+            Persona.Tramite = txtTrámite.Text;
 
+            ObjArbol.Agregar(Persona);
+            ObjArbol.Recorrer(dgvLDatos);
+            ObjArbol.Recorrer(trvArbol);
         }
     }
 }

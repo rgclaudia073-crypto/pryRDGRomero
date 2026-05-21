@@ -57,6 +57,33 @@ namespace pryRDGRomero
                 if (R.Derecha != null) InOrdenAsc(Dgv, R.Derecha);
             
         }
+
+        public void Recorrer(TreeView tree)
+        {
+            tree.Nodes.Clear();
+            TreeNode NodesPadre = new TreeNode("Árbol");
+            tree.Nodes.Add(NodesPadre);
+            PreOrden(Raiz, NodesPadre);
+            tree.ExpandAll();
+        }
+
+
+        private void PreOrden(clsNodos R, TreeNode nodoTreeView)
+        {
+            TreeNode NodoPadre = new TreeNode(R.Codigo.ToString());
+                nodoTreeView.Nodes.Add(NodoPadre);
+            if (R.Izquierda != null)
+            {
+                PreOrden(R.Izquierda, NodoPadre);
+            }
+            if (R.Derecha != null)
+            {
+                PreOrden(R.Derecha, NodoPadre);
+            }
+        }
+
+
+
     }
 }
 

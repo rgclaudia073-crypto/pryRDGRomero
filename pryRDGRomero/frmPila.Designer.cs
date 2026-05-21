@@ -29,11 +29,17 @@
         private void InitializeComponent()
         {
             this.grpNuevosElementos = new System.Windows.Forms.GroupBox();
+            this.txtTrámite = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtCódigo = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.lblTrámite = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblCódigo = new System.Windows.Forms.Label();
             this.grpEliminarElementos = new System.Windows.Forms.GroupBox();
+            this.lbltramiteE = new System.Windows.Forms.Label();
+            this.lblNombreE = new System.Windows.Forms.Label();
+            this.lblCodigoE = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,12 +51,6 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtCódigo = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtTrámite = new System.Windows.Forms.TextBox();
-            this.lbltramiteE = new System.Windows.Forms.Label();
-            this.lblNombreE = new System.Windows.Forms.Label();
-            this.lblCodigoE = new System.Windows.Forms.Label();
             this.grpNuevosElementos.SuspendLayout();
             this.grpEliminarElementos.SuspendLayout();
             this.grpListado.SuspendLayout();
@@ -74,6 +74,27 @@
             this.grpNuevosElementos.TabIndex = 0;
             this.grpNuevosElementos.TabStop = false;
             this.grpNuevosElementos.Text = "Nuevo Elemento";
+            // 
+            // txtTrámite
+            // 
+            this.txtTrámite.Location = new System.Drawing.Point(110, 121);
+            this.txtTrámite.Name = "txtTrámite";
+            this.txtTrámite.Size = new System.Drawing.Size(116, 26);
+            this.txtTrámite.TabIndex = 9;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(110, 73);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(116, 26);
+            this.txtNombre.TabIndex = 8;
+            // 
+            // txtCódigo
+            // 
+            this.txtCódigo.Location = new System.Drawing.Point(110, 30);
+            this.txtCódigo.Name = "txtCódigo";
+            this.txtCódigo.Size = new System.Drawing.Size(116, 26);
+            this.txtCódigo.TabIndex = 7;
             // 
             // btnAgregar
             // 
@@ -131,6 +152,39 @@
             this.grpEliminarElementos.TabIndex = 1;
             this.grpEliminarElementos.TabStop = false;
             this.grpEliminarElementos.Text = "Eliminar Elemento";
+            // 
+            // lbltramiteE
+            // 
+            this.lbltramiteE.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbltramiteE.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltramiteE.Location = new System.Drawing.Point(107, 122);
+            this.lbltramiteE.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbltramiteE.Name = "lbltramiteE";
+            this.lbltramiteE.Size = new System.Drawing.Size(93, 19);
+            this.lbltramiteE.TabIndex = 16;
+            this.lbltramiteE.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblNombreE
+            // 
+            this.lblNombreE.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblNombreE.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreE.Location = new System.Drawing.Point(107, 74);
+            this.lblNombreE.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNombreE.Name = "lblNombreE";
+            this.lblNombreE.Size = new System.Drawing.Size(93, 19);
+            this.lblNombreE.TabIndex = 15;
+            this.lblNombreE.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblCodigoE
+            // 
+            this.lblCodigoE.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCodigoE.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigoE.Location = new System.Drawing.Point(107, 31);
+            this.lblCodigoE.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCodigoE.Name = "lblCodigoE";
+            this.lblCodigoE.Size = new System.Drawing.Size(75, 19);
+            this.lblCodigoE.TabIndex = 14;
+            this.lblCodigoE.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnEliminar
             // 
@@ -227,60 +281,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            // 
-            // txtCódigo
-            // 
-            this.txtCódigo.Location = new System.Drawing.Point(110, 30);
-            this.txtCódigo.Name = "txtCódigo";
-            this.txtCódigo.Size = new System.Drawing.Size(116, 26);
-            this.txtCódigo.TabIndex = 7;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(110, 73);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(116, 26);
-            this.txtNombre.TabIndex = 8;
-            // 
-            // txtTrámite
-            // 
-            this.txtTrámite.Location = new System.Drawing.Point(110, 121);
-            this.txtTrámite.Name = "txtTrámite";
-            this.txtTrámite.Size = new System.Drawing.Size(116, 26);
-            this.txtTrámite.TabIndex = 9;
-            // 
-            // lbltramiteE
-            // 
-            this.lbltramiteE.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbltramiteE.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltramiteE.Location = new System.Drawing.Point(107, 122);
-            this.lbltramiteE.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbltramiteE.Name = "lbltramiteE";
-            this.lbltramiteE.Size = new System.Drawing.Size(93, 19);
-            this.lbltramiteE.TabIndex = 16;
-            this.lbltramiteE.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // lblNombreE
-            // 
-            this.lblNombreE.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblNombreE.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreE.Location = new System.Drawing.Point(107, 74);
-            this.lblNombreE.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblNombreE.Name = "lblNombreE";
-            this.lblNombreE.Size = new System.Drawing.Size(93, 19);
-            this.lblNombreE.TabIndex = 15;
-            this.lblNombreE.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // lblCodigoE
-            // 
-            this.lblCodigoE.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCodigoE.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigoE.Location = new System.Drawing.Point(107, 31);
-            this.lblCodigoE.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCodigoE.Name = "lblCodigoE";
-            this.lblCodigoE.Size = new System.Drawing.Size(75, 19);
-            this.lblCodigoE.TabIndex = 14;
-            this.lblCodigoE.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // frmPila
             // 

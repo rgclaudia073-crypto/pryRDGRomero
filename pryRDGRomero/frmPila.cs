@@ -22,23 +22,21 @@ namespace pryRDGRomero
             dgvPila.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
         clsPila Pila = new clsPila();
-        private object txtCodigo;
-        private object txtTramite;
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             clsNodos n = new clsNodos();
-            n.Codigo = Convert.ToInt32(txtCodigo.Text);
+            n.Codigo = Convert.ToInt32(txtCódigo.Text);
             n.Nombre = txtNombre.Text;
-            n.Tramite = txtTramite.Text;
+            n.Tramite = txtTrámite.Text;
 
             Pila.Agregar(n);
             Pila.Recorrer(dgvPila); 
             Pila.Recorrer(lstPila);
 
-            txtCodigo.Clear();
+            txtCódigo.Clear();
             txtNombre.Clear();
-            txtTramite.Clear();
+            txtTrámite.Clear();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -47,7 +45,7 @@ namespace pryRDGRomero
             {
                 lblCódigo.Text = Pila.Primero.Codigo.ToString();
                 lblNombre.Text = Pila.Primero.Nombre;
-                lblTrámite.Text = Pila.Primero.Tramite;
+                lblTrámite.Text = Pila.Primero.Trámite;
                 Pila.Eliminar();
                 Pila.Recorrer(dgvPila);
                 Pila.Recorrer(lstPila);

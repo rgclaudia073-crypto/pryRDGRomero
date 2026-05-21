@@ -46,7 +46,7 @@ namespace pryRDGRomero
 
         private void datosDeDesarrolloToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmDatosDelDesarrollador v = new frmDatosDelDesarrollador();
+            frmDatosDelDesarrollo v = new frmDatosDelDesarrollo();
             v.ShowDialog();
         }
     }

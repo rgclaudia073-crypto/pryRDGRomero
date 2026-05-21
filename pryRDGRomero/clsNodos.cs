@@ -56,6 +56,8 @@ namespace pryRDGRomero
             set { sig = value; }
 
         }
+
+        public string Trámite { get; internal set; }
     }
 }
 
