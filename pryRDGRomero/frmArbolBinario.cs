@@ -22,7 +22,7 @@ namespace pryRDGRomero
             clsNodos Persona = new clsNodos();
             Persona.Codigo = Convert.ToInt32(txtCódigo.Text);
             Persona.Nombre = txtNombre.Text;
-            Persona.Tramite = txtTrámite.Text;
+            Persona.Tramite = Convert.ToChar(txtTramite.Text);
 
             ObjArbol.Agregar(Persona);
             ObjArbol.Recorrer(dgvLDatos);

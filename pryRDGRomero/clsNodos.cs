@@ -15,6 +15,7 @@ namespace pryRDGRomero
         private string nombre;
         private clsNodos sig;
         private clsNodos ant;
+        private string tramite;
 
         //Propiedades del nodo
         public Int32 Codigo
@@ -57,7 +58,6 @@ namespace pryRDGRomero
 
         }
 
-        public string Trámite { get; internal set; }
     }
 }
 

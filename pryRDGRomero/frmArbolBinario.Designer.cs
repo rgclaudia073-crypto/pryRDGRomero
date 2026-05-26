@@ -30,7 +30,7 @@
         {
             this.grpNuevoElemnto = new System.Windows.Forms.GroupBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.txtTrámite = new System.Windows.Forms.TextBox();
+            this.txtTramite = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtCódigo = new System.Windows.Forms.TextBox();
             this.lblTramite = new System.Windows.Forms.Label();
@@ -61,7 +61,7 @@
             // grpNuevoElemnto
             // 
             this.grpNuevoElemnto.Controls.Add(this.btnAgregar);
-            this.grpNuevoElemnto.Controls.Add(this.txtTrámite);
+            this.grpNuevoElemnto.Controls.Add(this.txtTramite);
             this.grpNuevoElemnto.Controls.Add(this.txtNombre);
             this.grpNuevoElemnto.Controls.Add(this.txtCódigo);
             this.grpNuevoElemnto.Controls.Add(this.lblTramite);
@@ -86,10 +86,10 @@
             // 
             // txtTramite
             // 
-            this.txtTrámite.Location = new System.Drawing.Point(92, 105);
-            this.txtTrámite.Name = "txtTramite";
-            this.txtTrámite.Size = new System.Drawing.Size(133, 26);
-            this.txtTrámite.TabIndex = 5;
+            this.txtTramite.Location = new System.Drawing.Point(92, 105);
+            this.txtTramite.Name = "txtTramite";
+            this.txtTramite.Size = new System.Drawing.Size(133, 26);
+            this.txtTramite.TabIndex = 5;
             // 
             // txtNombre
             // 
@@ -307,7 +307,7 @@
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.Label lblTramite;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.TextBox txtTrámite;
+        private System.Windows.Forms.TextBox txtTramite;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtCódigo;
         private System.Windows.Forms.Label lblCódigo;

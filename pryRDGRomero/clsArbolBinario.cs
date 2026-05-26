@@ -81,9 +81,6 @@ namespace pryRDGRomero
                 PreOrden(R.Derecha, NodoPadre);
             }
         }
-
-
-
     }
 }
 

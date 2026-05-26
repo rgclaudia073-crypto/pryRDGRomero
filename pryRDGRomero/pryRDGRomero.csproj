@@ -50,6 +50,7 @@
     <Compile Include="clsArchivo.cs" />
     <Compile Include="clsCola.cs" />
     <Compile Include="clsEstructurasLineales.cs" />
+    <Compile Include="clsGrafo.cs" />
     <Compile Include="clsListaDoble.cs" />
     <Compile Include="clsListaSimple.cs" />
     <Compile Include="clsNodos.cs" />
@@ -83,6 +84,12 @@
     </Compile>
     <Compile Include="frmEstructuraDeDatos.Designer.cs">
       <DependentUpon>frmEstructuraDeDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGrafos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGrafos.Designer.cs">
+      <DependentUpon>frmGrafos.cs</DependentUpon>
     </Compile>
     <Compile Include="frmListaSimple.cs">
       <SubType>Form</SubType>
@@ -122,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEstructuraDeDatos.resx">
       <DependentUpon>frmEstructuraDeDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGrafos.resx">
+      <DependentUpon>frmGrafos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListaSimple.resx">
       <DependentUpon>frmListaSimple.cs</DependentUpon>
